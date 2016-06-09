@@ -12,7 +12,7 @@ RUN mkdir -p /usr/local/sbin/
 
 RUN curl -sL -o /usr/local/sbin/sbt-launch.jar https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch.jar
 
-COPY sbt /usr/local/sbin/sbt
+COPY script/sbt /usr/local/sbin/sbt
 RUN chmod u+x /usr/local/sbin/sbt
 
 RUN sbt sbtVersion
