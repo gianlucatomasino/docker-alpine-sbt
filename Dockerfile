@@ -5,7 +5,7 @@ ENV SBT_VERSION 0.13.11
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
 
-RUN apk add --update curl && \
+RUN apk add --update curl bash && \
     rm -rf /var/cache/apk/*
 
 RUN mkdir -p /usr/local/sbin/
